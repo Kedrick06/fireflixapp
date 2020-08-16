@@ -1,6 +1,9 @@
 import axios from "axios";
-/**root url to make requests */
 
+
+
+
+/**root url to make requests */
 const instance = axios.create({
     baseURL: "https://api.themoviedb.org/3",
 });
