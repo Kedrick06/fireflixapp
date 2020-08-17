@@ -39,6 +39,7 @@ function Row ({title, fetchUrl}) {
                 </div>
 
             </div>
+        
 
         )
 
