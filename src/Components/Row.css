@@ -25,6 +25,11 @@
     overflow-x: none;
     padding: 20px;
 }
+
 .row-posters::-webkit-scrollbar{
     display: none;
+}
+
+.row-movie{
+    margin-left:20px;
 }
