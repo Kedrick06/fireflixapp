@@ -5,6 +5,8 @@ import requests from './requests';
 
 function Display() {
   return (
+
+    /**Fetching the data to display for the user */
     <div className="App">
     
     <Row title="FireFlix Originals" fetchUrl={requests.fetchFireflixOriginals} />
