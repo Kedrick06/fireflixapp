@@ -15,8 +15,8 @@ class Banner extends Component{
                 setMovie(
                     /**I want to grab random content */
                     request.data.results[Math.floor(Math.random() * request.data.results.length)]
-                )
-
+                );
+                return request;
             }
 
             fetchData();
