@@ -4,4 +4,15 @@
   opacity: 80%
 }
 
+.nav-content{
+  position:fixed;
+  top: 0;
+  display:flex;
+}
+
+.nav-logo{
+  width:30px;
+  object-fit:contain;
+}
+
 
