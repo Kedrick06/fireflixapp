@@ -1,10 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
 
-class Nav extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+class Nav extends Component {
     
     render(){
         return(

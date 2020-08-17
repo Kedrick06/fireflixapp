@@ -10,6 +10,9 @@
     padding-top: 125px;
     height: 190px;
 }
+.active {
+    color:maroon;
+}
 
 .banner-title{
     font-size:3rem;
