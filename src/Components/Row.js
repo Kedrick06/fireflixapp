@@ -39,7 +39,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
 
                         <img
                          key={movie.id}
-                         className="poster-movie" 
+                         className={`poster-movie ${isLargeRow && "poster-movieLarge"}`} 
                          src={`${base_url}${ isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
                          alt={movie.name}/>
                     ))}
