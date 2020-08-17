@@ -10,6 +10,12 @@ class Banner extends Component{
 
         useEffect (()  => {
             async function fetchData() {
+                const request = await Axios.get(requests.fetchFireflixOriginals);
+
+                setMovie(
+                    /**I want to grab random content */
+                    request.data.results[Math.floor(Math.random() * request.data.results.length)]
+                )
 
             }
 
