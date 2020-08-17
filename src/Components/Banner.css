@@ -14,3 +14,9 @@
     font-weight: 800;
     padding-bottom:0.3rem;
 }
+.banner-description{
+    width: 45rem;
+    line-height: 1.5;
+    padding-top:1rem;
+    font-size: 0.8rem;
+}
