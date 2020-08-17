@@ -3,6 +3,8 @@
     opacity: 75%;
     object-fit: contain;
     height: 400px;
+    outline-color: red;
+    border:none;
 }
 
 .banner-contents{
@@ -24,4 +26,16 @@
     font-size: 0.8rem;
     max-width:350px;
     height: 100px;
+}
+.banner-buttons {
+    cursor:pointer;
+    color: red;
+    outline:none;
+    border:none;
+    font-weight:700;
+    border-radius:0.5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
 }
