@@ -9,7 +9,7 @@ function Display() {
     /**Fetching the data to display for the user */
     <div className="App">
     
-    <Row title="FireFlix Originals" fetchUrl={requests.fetchFireflixOriginals} />
+    <Row title="FireFlix Originals" fetchUrl={requests.fetchFireflixOriginals} isLargeRow />
     
     <Row title="Trending" fetchUrl={requests.fetchTrending} />
 

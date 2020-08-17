@@ -7,14 +7,14 @@ import "./Row.css";
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 
-function Row ({title, fetchUrl}) {
+function Row ({title, fetchUrl, isLargeRow}) {
 
     const [movies, setMovies] = useState ([]);
 
     //**When this loads I want to make a request from TMBD */
 
     useEffect(() => {
-
+        // if an array run only once
         async function fetchData() {
             const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
