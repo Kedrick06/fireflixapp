@@ -30,7 +30,7 @@ function Row ({title, fetchUrl}) {
 
         return(    
             <div className="row-movie">
-                <h2>{title}</h2>
+                <h3>{title}</h3>
 
 
 
