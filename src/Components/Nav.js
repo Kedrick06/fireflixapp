@@ -10,7 +10,7 @@ class Nav extends React.Component {
         return(
             <div className="nav-content">
                 <img className="nav-logo"
-                src="https://toppng.com/uploads/preview/transparent-flame-logo-flame-logo-115630004981ut5wwx6kt.png"
+                src="https://www.pinclipart.com/picdir/big/122-1223559_flames-clipart-revival-transparent-background-fire-png.png"
                 alt="FireFlix Logo"/>
             </div>
         )
