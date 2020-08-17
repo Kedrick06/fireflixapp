@@ -1,19 +1,22 @@
 .banner-top{
-    color: red;
-    opacity: 70%;
-    object-fit:contain;
-    height:400px;
+    color: white;
+    opacity: 75%;
+    object-fit: contain;
+    height: 400px;
 }
+
 .banner-contents{
     margin-left:30px;
     padding-top: 125px;
     height: 190px;
 }
+
 .banner-title{
     font-size:3rem;
     font-weight: 800;
     padding-bottom:0.3rem;
 }
+
 .banner-description{
     width: 45rem;
     line-height: 1.5;
