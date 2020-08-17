@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Display from './Components/Display'
+import Banner from './Components/Banner'
 
 
 function App() {

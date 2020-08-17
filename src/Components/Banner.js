@@ -3,9 +3,9 @@ import Axios from './Axios';
 import requests from './requests';
 
 
-class Banner extends Component{
+function Banner(){
 
-    render(){
+    
         const [movie, setMovie] = useState([]);
 
         useEffect (()  => {
@@ -26,10 +26,20 @@ class Banner extends Component{
 
 
         return(
-            <header>
+            <header className="banner-top"
+                style={{
+                    backgroundSize: "cover",
+                    backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+                    backgroundPosition: "center center",
+                    
+                }}>
+                <div className="banner-contents">
+                    <h1>
 
+                    </h1>
+                </div>
             </header>
         )
     }
-}
+
 export default Banner;
