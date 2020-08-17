@@ -1,6 +1,6 @@
 .banner-top{
     color: white;
-    opacity: 75%;
+    opacity: 90%;
     object-fit: contain;
     height: 400px;
     outline-color: red;
@@ -22,14 +22,14 @@
 .banner-description{
     width: 45rem;
     line-height: 1.5;
-    padding-top:1rem;
-    font-size: 0.8rem;
+    padding-top: 1rem;
+    font-size: 0.6rem;
     max-width:350px;
-    height: 100px;
+    height: 70px;
 }
-.banner-buttons {
+.banner-button {
     cursor:pointer;
-    color: red;
+    color:white;
     outline:none;
     border:none;
     font-weight:700;
@@ -37,5 +37,13 @@
     padding-left: 2rem;
     padding-right: 2rem;
     margin-right: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color:red;
+    opacity:90%
+}
+.banner-button:hover{
+    color:black;
+    background-color:beige;
+    transition: all 0.2s
 }
