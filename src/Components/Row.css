@@ -18,12 +18,14 @@
 .poster-movie:hover {
     transform: scale(1.08);
     opacity: 1;
-    
+
 }
 
 .row-posters {
     display: flex;
+
     overflow-y: hidden;
+    
     overflow-x: none;
     padding: 20px;
 }
