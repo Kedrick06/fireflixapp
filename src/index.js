@@ -23,6 +23,7 @@ ReactDOM.render(
     <Switch>
     <Route path="/Home" component={Homepage}/>
     <Route path="/Contact" component={Contact}/>
+    <Route path="/" component={App}/>
     </Switch>
     </BrowserRouter>
     <App />
