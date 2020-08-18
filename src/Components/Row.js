@@ -27,8 +27,9 @@ function Row ({title, fetchUrl, isLargeRow}) {
     }, [fetchUrl]);
 
 
+   
 
-
+    /**I'm setting the size of the video */
     const opts = {
         height:"390",
         width:"100%",
@@ -37,11 +38,12 @@ function Row ({title, fetchUrl, isLargeRow}) {
             },
         };
 
+    /** Using a hanleclick to pass through the trailer on to my images. */
     const handleClick = (movie) => {
         if (trailerUrl) {
             setTrailerUrl('');
         } else {
-            movieTrailer(movie?.name || "")
+            movieTrailer(movie?.name || movie?.overview || "")
             .then((url) => {
                 const urlParams= new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get('v'));
@@ -59,7 +61,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
 
                 <div className="row-posters">
                     {movies.map((movie) => (
-
+                        /**Creating it to where upon clicking on an image a youtube video pops up with a trailer. */
                         <img
                          key={movie.id}
                          onClick={() => handleClick(movie)}
@@ -68,9 +70,12 @@ function Row ({title, fetchUrl, isLargeRow}) {
                          alt={movie.name}/>
                     ))}
                 </div>
+                <div>
                     {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-                    
-            </div>
+                </div>
+           
+                 </div>
+
         
 
         );
