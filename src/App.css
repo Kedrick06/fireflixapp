@@ -3,11 +3,13 @@
   background-color:#111;
   
 }
+
 .nav-list{
   display:flex;
   justify-content: space-between;
   padding: 25px 40px;
 }
+
 nav ul li {
   display:inline-block;
   list-style:none;
