@@ -1,6 +1,5 @@
 .poster-movie {
     width: 100%;
-    
     object-fit: contain;
     max-height: 100px;
     transition: transform 450ms; 
