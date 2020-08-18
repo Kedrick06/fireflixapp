@@ -5,15 +5,22 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Homepage from './Components/Homepage';
+import {Provider} from 'react-redux';
+import { createStore, combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
+
+
+const rootReducer = combineReducers({
+  form: formReducer
+ })
+
+ const store = createStore(rootReducer)
 
 ReactDOM.render(
-<BrowserRouter>
-<div>
-  <Route component={App} />
-  <Route path='/Home' component={Homepage}/>
+  <Provider store={store}>
+    <App />
+  </Provider>,
 
-</div>
-</BrowserRouter>,
 
 
   document.getElementById('root')
