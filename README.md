@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FIREFLIXAPP - The Trailer and Movie Description App
+The purpose of the project is to provide the user data and visual information regarding television and movie content.
+The targeted end user for this app are those who are familiar with IMDB.com, Rotten Tomatoes, and other film aggregate sites.
 
 ## Available Scripts
 
