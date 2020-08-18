@@ -18,6 +18,7 @@
 .poster-movie:hover {
     transform: scale(1.08);
     opacity: 1;
+    
 }
 
 .row-posters {
