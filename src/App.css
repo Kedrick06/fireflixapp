@@ -1,6 +1,5 @@
 .App {
   margin: 0;
-
   background-color:#111;
   
 }
@@ -47,7 +46,7 @@ nav ul li {
   width:45px;
 
   object-fit:contain;
-  
+
   left:20px;
 }
 
