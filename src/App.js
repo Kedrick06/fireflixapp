@@ -14,8 +14,7 @@ function App() {
     <div className="App">
      <Fragment>
        <BrowserRouter>
-       
-      <Navlink />
+        <Navlink />
       <Navlogo />
       <Banner />
       <Switch>
