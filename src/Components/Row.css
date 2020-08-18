@@ -23,9 +23,7 @@
 
 .row-posters {
     display: flex;
-
     overflow-y: hidden;
-    
     overflow-x: none;
     padding: 20px;
 }
