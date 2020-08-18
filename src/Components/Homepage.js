@@ -12,8 +12,8 @@ class Homepage extends Component {
     return(
         <Fragment>
         <div className="App">
-            <BrowserRouter>
-            <Switch>
+        <BrowserRouter>
+        <Switch>
         <NavLink to= '/' activeClassName="active-nav">Homepage</NavLink>
         <NavLink to= '/Contact'>Contact</NavLink>
         </Switch>

@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import {Provider} from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
+import Contact from './Components/Contact'
 
 
 const rootReducer = combineReducers({
@@ -18,6 +19,12 @@ const rootReducer = combineReducers({
 
 ReactDOM.render(
   <Provider store={store}>
+    <BrowserRouter>
+    <Switch>
+    <Route path="/Home" component={Homepage}/>
+    <Route path="/Contact" component={Contact}/>
+    </Switch>
+    </BrowserRouter>
     <App />
   </Provider>,
 
