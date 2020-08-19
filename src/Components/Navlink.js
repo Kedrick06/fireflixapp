@@ -7,7 +7,7 @@ function Navlink(){
         <nav className="nav-list">
             <ul>
                 <li>
-                 <a href="/">Home</a>
+                 <a href="/">{Homepage} Home</a>
                 </li>
                 <br></br>
                 <li>

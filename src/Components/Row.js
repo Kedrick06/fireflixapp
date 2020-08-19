@@ -11,7 +11,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row ({title, fetchUrl, isLargeRow}) {
 
-    const [movies, setMovies] = useState ([]);
+    const [movie, setMovies] = useState ([]);
     const [trailerUrl, setTrailerUrl] = useState("");
 
     //**When this loads I want to make a request from TMBD */
@@ -43,7 +43,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
         if (trailerUrl) {
             setTrailerUrl('');
         } else {
-            movieTrailer(movie?.name || movie?.overview || "")
+            movieTrailer(movie?.name || "")
             .then((url) => {
                 const urlParams= new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get('v'));
@@ -60,7 +60,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
 
 
                 <div className="row-posters">
-                    {movies.map((movie) => (
+                    {movie.map((movie) => (
                         /**Creating it to where upon clicking on an image a youtube video pops up with a trailer. */
                         <img
                          key={movie.id}
@@ -73,8 +73,11 @@ function Row ({title, fetchUrl, isLargeRow}) {
                 <div>
                     {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
                 </div>
+                <h1 className="banner-description">
+                        {movie?.overview}
+                    </h1>
            
-                 </div>
+             </div>
 
         
 

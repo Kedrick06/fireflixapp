@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
-import Banner from './Banner'
-import Display from './Display'
+
 import {NavLink} from 'react-router-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Switch} from 'react-router-dom'
+import Contact from './Contact'
 
 
 class Homepage extends Component {
@@ -15,10 +15,9 @@ class Homepage extends Component {
         <BrowserRouter>
         <Switch>
         <NavLink to= '/' activeClassName="active-nav">Homepage</NavLink>
-        <NavLink to= '/Contact'>Contact</NavLink>
+        <NavLink to= '/Contact'>{Contact}</NavLink>
         </Switch>
-        <Banner />
-        <Display />
+        
         </BrowserRouter>
         </div>
         </Fragment>

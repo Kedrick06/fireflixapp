@@ -4,7 +4,6 @@ import Display from './Components/Display'
 import Banner from './Components/Banner'
 import Navlogo from './Components/Navlogo'
 import Navlink from './Components/Navlink'
-import Homepage from './Components/Homepage'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Contact from './Components/Contact'
 
@@ -14,13 +13,13 @@ function App() {
     <div className="App">
      <Fragment>
        <BrowserRouter>
-        <Navlink />
+      <Navlink />
       <Navlogo />
       <Banner />
+      <Display />
       <Switch>
       <Route path="/Contact" component={Contact}/>
       </Switch>
-      <Display />
       </BrowserRouter>
     </Fragment>
     </div>
