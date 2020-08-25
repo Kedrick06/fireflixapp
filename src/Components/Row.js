@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from './Axios';
 import "./Row.css";
-import Images from './Images'
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 
@@ -31,7 +30,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
 
     /**I'm setting the size of the video */
     const opts = {
-        height:"390",
+        height:"430",
         width:"100%",
             playerVars: {
                 autoplay:1,
@@ -47,6 +46,12 @@ function Row ({title, fetchUrl, isLargeRow}) {
             .then((url) => {
                 const urlParams= new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get('v'));
+            })
+            .catch((error) => {
+                return (
+                   alert('hello')
+                )
+                ;
             })
         }
     }
@@ -73,9 +78,7 @@ function Row ({title, fetchUrl, isLargeRow}) {
                 <div>
                     {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
                 </div>
-                <h1 className="banner-description">
-                        {movie?.overview}
-                    </h1>
+                <h1 className="banner-description">{movie?.overview}</h1>
            
              </div>
 

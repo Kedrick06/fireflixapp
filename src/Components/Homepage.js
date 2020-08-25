@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-
 import {NavLink} from 'react-router-dom';
 import {BrowserRouter, Switch} from 'react-router-dom'
 import Contact from './Contact'
