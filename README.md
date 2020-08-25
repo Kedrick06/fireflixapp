@@ -2,6 +2,10 @@ FIREFLIXAPP - The Trailer and Movie Description App
 The purpose of the project is to provide the user data and visual information regarding television and movie content.
 The targeted end user for this app are those who are familiar with IMDB.com, Rotten Tomatoes, and other film aggregate sites.
 
+
+App Link: https://amazing-hamilton-66162d.netlify.app/
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -9,7 +13,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open https://amazing-hamilton-66162d.netlify.app/ to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
